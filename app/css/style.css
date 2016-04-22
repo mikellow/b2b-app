@@ -1,0 +1,72 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.pageContent {
+  padding-left: 50px;
+  transition: padding 0.4s ease;
+  /*
+  width: 100%;
+  height: 100%;
+  */
+}
+
+#leftNav {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 50px;
+  background-color: #04B826;
+  transition: width 0.4s ease;
+  overflow: hidden;
+  /*
+  &:hover{
+  	width: $menuWidthHover;
+  }
+  */
+}
+#leftNav .glyphicon {
+  font-size: 30px;
+  line-height: 30px;
+  width: 30px;
+  padding-right: 15px;
+}
+#leftNav .glyphicon-class {
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 5px;
+}
+#leftNav ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+#leftNav ul li a {
+  display: table;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 10px;
+  line-height: 30px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+}
+#leftNav ul li a:hover {
+  background-color: #03821B;
+}
+#leftNav ul li a span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* changes */
+body.menuHover #leftNav {
+  width: 200px;
+}
+body.menuHover .pageContent {
+  padding-left: 200px;
+}
